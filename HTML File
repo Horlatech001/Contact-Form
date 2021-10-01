@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+<meta charset="UTF-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<title>Login and registration form design</title>    
+<link rel="stylesheet" href="style.css">
+</head>
+<body>    
+<div class="login-page">        
+<div class="form">          
+<form class="register-form">               
+<p id="head"> Banking Registration Form</p>              
+<input type="text" placeholder="Username">        
+<input type="text" placeholder="Password">     
+<input type="text" placeholder="Email id">      
+<button>Create Account</button>             
+<p class="message"> Already Registered? <a href="#"> Login </a>     
+</p>         
+</form>         
+<form class="login-form">     
+<p id="head"> Login Form</p>      
+<input type="text" placeholder="Username">     
+<input type="password" placeholder="Password">  
+<button> Login </button>           
+<p class="message"> Not Registered? <a href="#"> Register </a>      
+</p>          
+</form>    
+</div>  
+</div>   
+<script src="js/jquery.min.js"></script> 
+<script>      
+$('.message a').click(function(){    
+$('form').animate({height: "toggle", opacity: "toggle"}, "slow");    
+});   
+</script>
+</body>
+</html>
